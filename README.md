@@ -6,6 +6,6 @@ One notebook(main.ipynb) contains all the codes implemented along with the stati
 
 Models used for trading strategy-
 
-Base Model is a z-score based mean reversion strategy 
+Base Model is a z-score based mean reversion strategy, then a model that builds on the basic z-score strategy with stricter thresholds. 
 The second model is built using a Machine learning approach to outperform the Base Model
 
