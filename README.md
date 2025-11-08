@@ -1,7 +1,6 @@
 # Volatility Pairs Trading
 
-This repository presents an analysis of **implied volatility relationships** between **Bank Nifty** and **Nifty** indices.  
-Using a **minute-level options dataset** containing implied volatilities and time-to-expiry values, we explore their correlation structure to design a **medium-frequency pairs trading strategy** that profits from deviations in their volatility spread.
+This repository contains an analysis of implied volatility relationships between Bank Nifty and Nifty indices. The dataset used is a minute-level Options dataset which contains the Implied Volatilities of the 2 instruments along with their time to expiry. We take advantage of their correlation to build a medium frequency pair-trading strategy to profit off the spread between them.
 
 ---
 
