@@ -1,13 +1,27 @@
-# Volatility_Pairs_Trading
+# Volatility Pairs Trading
 
-This repository contains an analysis of implied volatility relationships between Bank Nifty and Nifty indices. The dataset used is a minute-level Options dataset which contains the Implied Volatilities of the 2 instruments along with their time to expiry. We take advantage of their correlation to build a medium frequency pair-trading strategy to profit off the spread between them.
+This repository presents an analysis of **implied volatility relationships** between **Bank Nifty** and **Nifty** indices.  
+Using a **minute-level options dataset** containing implied volatilities and time-to-expiry values, we explore their correlation structure to design a **medium-frequency pairs trading strategy** that profits from deviations in their volatility spread.
 
-One notebook(Main.ipynb) contains all the codes implemented along with the statistical modelling aspect before implementing any strategies, all the plots to better understand and detailed explanation of each portion.
+---
 
-There are also 3 separate .py files with classes for each strategy's logic. All the preprocessing, feature creation etc. are done in the Main.ipynb file.
+## Project Structure
 
-Models used for trading strategy-
+- **`Main.ipynb`** – Contains the complete workflow:
+  - Data preprocessing and feature engineering  
+  - Exploratory data analysis and visualization  
+  - Statistical modeling and hypothesis testing  
+  - Backtesting and evaluation of trading strategies  
 
-Base Model is a z-score based mean reversion strategy, then a model that builds on the basic z-score strategy with stricter thresholds. 
-The second model is built using a Machine learning approach to outperform the Base Model
+- **`strategy_base.py`** – Implements the baseline **z-score mean reversion** strategy.  
+- **`strategy_strict.py`** – Extends the base model with **stricter entry/exit thresholds** and improved risk management.  
+- **`strategy_ml.py`** – Machine learning–based model that captures nonlinear dependencies to outperform the base strategy.
 
+## Dataset
+
+- **Frequency:** 1-minute  
+- **Fields:** Implied volatility (Bank Nifty & Nifty), time to expiry, timestamp
+  
+
+All preprocessing, feature creation, and data exploration steps are performed within the `Main.ipynb` notebook.  
+The trading strategy logic is modularized into separate `.py` files.
